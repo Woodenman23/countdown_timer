@@ -10,6 +10,7 @@ tot_secs = hours * 3600 + minutes * 60 + seconds
 
 # display timer
 while tot_secs:
+    # timedelta method displays changes in time with digital display
     timer = datetime.timedelta(seconds = tot_secs)
     print(timer, end = "\r")
     time.sleep(1)
